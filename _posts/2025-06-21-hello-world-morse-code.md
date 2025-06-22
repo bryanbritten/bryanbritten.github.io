@@ -187,7 +187,7 @@ int main(void) {
 By adding `PROGMEM` towards the end of `const char hellowWorldMorseCode` and then using `pgm_read_byte`, you can see the impact this has on how the data is stored after reflashing the chip.
 
 ```bash
-bryan@dell:~/Projects/LEDFlasher$ avr-size -C --mcu=atmega328p main.elf
+$ avr-size -C --mcu=atmega328p main.elf
 AVR Memory Usage
 ----------------
 Device: atmega328p
