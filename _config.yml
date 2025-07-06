@@ -135,8 +135,8 @@ keywords: "embedded,assembly,c,firmware,linux,adruino,raspberrypi,microcontrolle
 
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#C21807"
-hover-col: "#C21807"
+link-col: "#0078D4"
+hover-col: "#0078D4"
 navbar-col: "#FFFFFF"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
