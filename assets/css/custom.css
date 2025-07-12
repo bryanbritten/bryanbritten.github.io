@@ -3,3 +3,32 @@
     height: auto;
     border-radius: 50%;
 }
+
+img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+#imgModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  overflow: auto;
+}
+
+#imgModal img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid white;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #000;
+}
+
+#imgModal img:hover {
+  cursor: zoom-out;
+}
