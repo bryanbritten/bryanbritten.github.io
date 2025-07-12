@@ -24,6 +24,11 @@ navbar-links:
   Posts: "/"
   Appendix: "appendix"
 
+collections:
+  appendix:
+    output: true
+    permalink: /appendix/:title/
+
 ################
 # --- Logo --- #
 ################
