@@ -126,7 +126,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "embedded,assembly,c,firmware,linux,adruino,raspberrypi,microcontroller,fpga"
+keywords: "data,azure,aws,gcp,python,r,sql,statistics,machine learning,ai,artificial intelligence,deep learning,bi,business intelligence,data visualization,data science,data engineering,data analysis,data analytics,data storytelling,kafka,spark,hadoop,databricks,azure synapse,azure data factory,azure data bricks,azure machine learning,azure ml,azure devops,ci/cd,jupyter,jupyterlab,jupyter notebook,notebook,notebooks"
 
 ######################################
 # --- Colours / background image --- #
