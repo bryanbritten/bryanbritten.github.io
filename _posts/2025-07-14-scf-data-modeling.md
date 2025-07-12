@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - Data Modeling
 tags: [scf, modeling, schema, data]
-author: Bryan Britten
 excerpt: Part four of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

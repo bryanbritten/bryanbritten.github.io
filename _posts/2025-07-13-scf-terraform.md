@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - Terraform
 tags: [scf, iac, azure, devops, data]
-author: Bryan Britten
 excerpt: Part three of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

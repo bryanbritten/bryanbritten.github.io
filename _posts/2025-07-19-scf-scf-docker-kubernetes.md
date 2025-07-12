@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - Docker/Kubernetes
 tags: [scf, docker, kubernetes, containerization, data]
-author: Bryan Britten
 excerpt: Part nine of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

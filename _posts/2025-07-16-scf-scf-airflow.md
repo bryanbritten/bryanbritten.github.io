@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - Airflow
 tags: [scf, airflow, orchestration, data]
-author: Bryan Britten
 excerpt: Part six of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

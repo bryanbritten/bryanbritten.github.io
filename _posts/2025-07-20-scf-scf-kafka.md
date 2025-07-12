@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - Kafka
 tags: [scf, queues, pub/sub, streaming, data]
-author: Bryan Britten
 excerpt: Part ten of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

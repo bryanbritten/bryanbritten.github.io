@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - GitHub Actions
 tags: [scf, cicd, devops, testing, automation, data]
-author: Bryan Britten
 excerpt: Part eight of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

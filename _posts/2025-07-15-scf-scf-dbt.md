@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - dbt (Data Build Tool)
 tags: [scf, dbt, sql, etl, elt, data]
-author: Bryan Britten
 excerpt: Part five of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 

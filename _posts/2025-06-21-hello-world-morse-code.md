@@ -2,7 +2,6 @@
 layout: post
 title: Hello World - Morse Code
 tags: [avr, atmega328p, embedded, c]
-author: Bryan Britten
 excerpt: My first embedded project - Blinking "Hello World" in Morse code using an LED and the ATmega328p.
 ---
 

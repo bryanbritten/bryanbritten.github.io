@@ -2,7 +2,6 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - PowerBI
 tags: [scf, azure, visualization, dashboards, analytics, data]
-author: Bryan Britten
 excerpt: Part seven of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 
