@@ -3,7 +3,7 @@ layout: page
 ---
 
 <div align="center">
-    <img id="profile-photo" src="/assets/img/me-revised.jpeg" alt="A picture of me.">
+    <img id="profile-photo" src="/assets/img/me.jpeg" alt="A picture of me.">
 </div>
 
 <h1 align="center">About Me</h1>
