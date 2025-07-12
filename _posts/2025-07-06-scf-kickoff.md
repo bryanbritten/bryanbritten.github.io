@@ -2,7 +2,7 @@
 layout: post
 title: SeeClickFix Pipeline in Azure - Project Kickoff
 tags: [scf, data]
-excerpt: Part two of a multi-part series on practicting data engineering skills with SeeClickFix data.
+excerpt: Part one of a multi-part series on practicting data engineering skills with SeeClickFix data.
 ---
 
 ### Table of Contents
