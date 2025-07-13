@@ -37,7 +37,9 @@
             {% if page.author %}
               By <strong>{{ page.author | strip_html }}</strong><br>
             {% endif%}
+            {% if page.collection != "appendix" %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            {% endif %}
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
