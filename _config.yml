@@ -27,7 +27,7 @@ navbar-links:
 collections:
   entries:
     output: true
-    permalink: /entry/:name/
+    permalink: /entry/:slug/
 
 ################
 # --- Logo --- #
