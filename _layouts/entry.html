@@ -1,0 +1,74 @@
+---
+layout: base
+---
+
+{% include header.html type="entry" %}
+
+<main class="entry-container">
+    <div class="entry-content">
+        {{ content }}
+    </div>
+
+    <div class="entry-date">
+        {{ page.date | date: "%Y-%m-%d %H:%M" }}
+    </div>
+    {%- comment -%}
+    Compute ordered entries (oldest -> newest), then derive first/prev/next/last.
+    {%- endcomment -%}
+    {% assign ordered = site.entries | sort: "date" %}
+
+    {% assign idx = nil %}
+    {% for e in ordered %}
+        {% if e.url == page.url %}
+            {% assign idx = forloop.index0 %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+
+    {% assign first = ordered.first %}
+    {% assign last  = ordered.last %}
+
+    {% if idx != nil %}
+        {% assign prev_idx = idx | minus: 1 %}
+        {% assign next_idx = idx | plus: 1 %}
+
+        {% if prev_idx >= 0 %}
+            {% assign prev = ordered[prev_idx] %}
+        {% else %}
+            {% assign prev = nil %}
+        {% endif %}
+
+        {% if next_idx < ordered.size %}
+            {% assign next = ordered[next_idx] %}
+        {% else %}
+            {% assign next = nil %}
+        {% endif %}
+    {% endif %}
+
+    <nav class="entry-nav" aria-label="Entry navigation">
+        <a class="entry-nav-btn {% if page.url == first.url %}is-disabled{% endif %}"
+           href="{% if page.url == first.url %}#{% else %}{{ first.url }}{% endif %}"
+           {% if page.url == first.url %}aria-disabled="true" tabindex="-1"{% endif %}>
+            « First
+        </a>
+
+        <a class="entry-nav-btn {% if prev == nil %}is-disabled{% endif %}"
+           href="{% if prev == nil %}#{% else %}{{ prev.url }}{% endif %}"
+           {% if prev == nil %}aria-disabled="true" tabindex="-1"{% endif %}>
+            ‹ Prev
+        </a>
+
+        <a class="entry-nav-btn {% if next == nil %}is-disabled{% endif %}"
+           href="{% if next == nil %}#{% else %}{{ next.url }}{% endif %}"
+           {% if next == nil %}aria-disabled="true" tabindex="-1"{% endif %}>
+            Next ›
+        </a>
+
+        <a class="entry-nav-btn {% if page.url == last.url %}is-disabled{% endif %}"
+           href="{% if page.url == last.url %}#{% else %}{{ last.url }}{% endif %}"
+           {% if page.url == last.url %}aria-disabled="true" tabindex="-1"{% endif %}>
+            Last »
+        </a>
+    </nav>
+
+</main>

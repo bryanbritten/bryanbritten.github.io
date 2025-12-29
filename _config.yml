@@ -20,14 +20,14 @@ author: Bryan Britten
 ###############################################
 
 navbar-links:
-  About: "about"
   Posts: "/"
-  Appendix: "appendix"
+  Journal: "entry"
+  About: "about"
 
 collections:
-  appendix:
+  entries:
     output: true
-    permalink: /appendix/:title/
+    permalink: /entry/:name/
 
 ################
 # --- Logo --- #
@@ -89,7 +89,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: A novice's journey into embedded software engineering
+rss-description: A novice's journey into systems/embedded engineering
 
 ###########################
 # --- General options --- #
@@ -131,7 +131,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "data,azure,aws,gcp,python,r,sql,statistics,machine learning,ai,artificial intelligence,deep learning,bi,business intelligence,data visualization,data science,data engineering,data analysis,data analytics,data storytelling,kafka,spark,hadoop,databricks,azure synapse,azure data factory,azure data bricks,azure machine learning,azure ml,azure devops,ci/cd,jupyter,jupyterlab,jupyter notebook,notebook,notebooks"
+keywords: "systems programming,embedded systems,embedded engineering,low-level programming,C programming,ARM architecture,microcontrollers,real-time systems,RTOS,firmware development,bare-metal programming,hardware-software integration,device drivers,operating systems internals,kernel development,systems architecture,memory management,concurrency and parallelism,lock-free programming,performance optimization,systems design,computer architecture,cache coherence,interrupt handling,bootloaders,cross-compilation,toolchains,debugging embedded systems,JTAG debugging,register-level programming,peripherals and buses,I2C SPI UART,embedded Linux,device tree,boot process,systems reliability,deterministic systems,latency and throughput,resource-constrained systems,real-time scheduling,interrupt latency,power management in embedded systems,firmware testing and validation"
 
 ######################################
 # --- Colours / background image --- #
@@ -141,8 +141,8 @@ keywords: "data,azure,aws,gcp,python,r,sql,statistics,machine learning,ai,artifi
 
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#0078D4"
-hover-col: "#0078D4"
+link-col: "#0085A1"
+hover-col: "#0085A1"
 navbar-col: "#FFFFFF"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
@@ -280,11 +280,19 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      path: ""
+      type: "entries"
+    values:
+      layout: "entry"
+      comments: false
+      social-share: false
+  -
+    scope:
+      path: "" # any file that's not a post or entry will be a "page" layout by default
     values:
       layout: "page"
       social-share: false

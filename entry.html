@@ -1,0 +1,25 @@
+---
+layout: none
+permalink: /entry/
+---
+
+{% assign latest = site.entries | sort: "date" | last %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="0; url={{ latest.url }}">
+        <link rel="canonical" href="{{ latest.url }}">
+        <script>
+            window.location.replace("{{ latest.url }}");
+        </script>
+    </head>
+    <body>
+        <p>
+        Redirecting to latest entry:
+        <a href="{{ latest.url }}">{{ latest.url }}</a>
+        </p>
+    </body>
+</html>
+

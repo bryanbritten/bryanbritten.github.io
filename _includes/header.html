@@ -22,6 +22,7 @@
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        {% if include.type != "entry" %}
         <div class="{{ include.type }}-heading">
           <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
           {% if page.subtitle %}
@@ -37,9 +38,6 @@
             {% if page.author %}
               By <strong>{{ page.author | strip_html }}</strong><br>
             {% endif%}
-            {% if page.collection != "appendix" %}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
-            {% endif %}
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
@@ -50,6 +48,7 @@
               {% include readtime.html %}
             {% endif %}
           {% endif %}
+        {% endif %}
         </div>
       </div>
     </div>

@@ -32,3 +32,49 @@ img {
 #imgModal img:hover {
   cursor: zoom-out;
 }
+
+.entry-container {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.entry-content {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.entry-content p {
+    margin-bottom: 10px;
+}
+
+.entry-date {
+    font-size: 0.875rem;
+    color: darkgrey;
+    text-align: center;
+}
+
+.entry-nav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.entry-nav-btn {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.entry-nav-btn:hover {
+    text-decoration: underline;
+}
+
+.entry-nav-btn.is-disabled {
+    display: none;
+}
+
